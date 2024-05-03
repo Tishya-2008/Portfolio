@@ -11,6 +11,7 @@ body {
   font-weight: 300;
   font-size: 16px;
   color: #555;
+  background-color:#e1f5fd;
 }
 
 ul, ol {
@@ -371,7 +372,7 @@ nav#navbar {
 
 #hobbies {
     padding: 130px 65px;
-    background: #f9f9f9;
+    background: #cde8f3;
 }
 #hobbies figure {
     width: 45%;
@@ -383,6 +384,7 @@ nav#navbar {
 }
 #hobbies .detail-entry .detail-wrap {
     width: 85%;
+    color: black;
 }
 
 
@@ -434,7 +436,47 @@ nav#navbar {
 
 footer{
     text-align:center;
-    background-color:rgb(228, 228, 228);
+    background-color:rgb(167, 217, 248);
     padding: 15px;
     padding-bottom:15px;
+    color: black;
+}
+
+@keyframes moveImage {
+    0% { transform: translateX(-100px); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+  }
+
+.banner-image {
+height: 400px;
+width: 350px;
+animation: moveImage 1s ease forwards;
+}
+
+@keyframes fadeUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+
+.banner-title {
+    font-size: 3.4em;
+    line-height: 1.2;
+    font-weight: 600;
+    color: #111;
+    animation: fadeUp 1s ease forwards;
+}
+
+img {
+    display: inline-block;
+    border: 0;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    width: 150px;
+    height: 180px;
+    animation: moveImage 1s ease forwards;
+  }
+  
+.img-animate {
+animation: moveImage 1s ease forwards;
 }
